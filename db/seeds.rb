@@ -1,7 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+Dojo.create [
+  {:date => Date.new(2011, 3, 12), :status => 'Confirmado', :info => 'Na TW...'},
+  {:date => Date.new(2011, 4, 9), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 5, 14), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 6, 11), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 7, 9), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 8, 13), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 9, 10), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 10, 8), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 11, 12), :status => 'Aguardando', :info => '...'},
+  {:date => Date.new(2011, 12, 10), :status => 'Aguardando', :info => '...'}
+]
