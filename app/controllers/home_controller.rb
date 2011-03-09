@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @dojos = Dojo.all
+    @dojos = Dojo.order('date asc').all
   end
 end

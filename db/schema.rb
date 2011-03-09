@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110307205941) do
+ActiveRecord::Schema.define(:version => 20110309162252) do
 
   create_table "dojos", :force => true do |t|
     t.date     "date"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20110307205941) do
     t.text     "info"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "address"
   end
 
 end
