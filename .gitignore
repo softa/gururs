@@ -2,3 +2,6 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
+public/stylesheets/style.css
+public/stylesheets/reset.css
+public/stylesheets/variables-and-mixings.css
