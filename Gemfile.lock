@@ -30,8 +30,12 @@ GEM
     activesupport (3.0.3)
     arel (2.0.7)
     builder (2.1.2)
+    cgi_multipart_eof_fix (2.5.0)
+    daemons (1.1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
     i18n (0.5.0)
     less (1.2.21)
       mutter (>= 0.4.2)
@@ -42,6 +46,11 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
     mutter (0.5.3)
     pg (0.10.1)
     polyglot (0.3.1)
@@ -80,6 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   less
+  mongrel
   pg
   rails (= 3.0.3)
   slim
