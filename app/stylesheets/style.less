@@ -3,13 +3,23 @@
 html { }
 body {
   background:#CDCDCD url(/images/body-texture.png) repeat fixed left top;
-  max-width:960px;
-  margin:0 auto;
 }
 #root {
   background:transparent url(/images/light.png) no-repeat scroll center top;
-  padding:1em;
 }
+a, a:visited, a:link {
+  color:#06D;
+  text-decoration:none;
+  -webkit-transition: all .2s ease-in;
+  :hover {
+    color:#28F;
+    text-decoration:underline;
+  }
+  :active {
+    color:#06D;
+  }
+}
+
 #header {
   #logo {
     img {
@@ -20,26 +30,67 @@ body {
       color:@guru-color;
     }
   }
-  h2 {
-    padding:1em 0;
-  }
+}
+#footer {
+  background:#FFF;
+  border-top:1px solid #DDD;
+  position:fixed;
+  z-index:10;
+  bottom:0;
+  left:0;
+  width:100%;
+  -webkit-box-shadow:rgba(0,0,0,.2) 0 -2px 3px;
+  -moz-box-shadow:rgba(0,0,0,.2) 0 -2px 3px;
+  box-shadow:rgba(0,0,0,.2) 0 -2px 3px;
+}
+#header, #main, #colophon {
+  max-width:960px;
+  margin:0 auto;
+  padding:1em;
+}
+#colophon {
+  text-align:right;
 }
 #main {
-  ul {
+  padding-bottom:5em;
+  h2 {
+    .rounded-corners(10px 10px 0 0);
+    .linear-gradient(#a00, #400);
+    margin:0 2em;
+    padding:.5em;
+    color:#FFF;
+    text-align:center;
+    font-size:1.25em;
+    text-shadow:#000 0 -1px 0;
+    position:relative;
+    z-index:0;
+    border:1px solid #a00;
+    border-bottom:0 none;
+    -webkit-box-shadow:rgba(255,255,255,.4) 0 1px 0 inset;
+    -moz-box-shadow:rgba(255,255,255,.4) 0 1px 0 inset;
+    box-shadow:rgba(255,255,255,.4) 0 1px 0 inset;
+  }
+  ul#dojos-list {
     .rounded-corners(10px);
+    position:relative;
+    z-index:1;
     background:#2e2e2e;
     border:1px solid #2e2e2e;
     list-style: none;
     padding:1em;
     margin:0;
-    -webkit-box-shadow:rgba(255,255,255,.25) 0 1px 0 inset;
-    -moz-box-shadow:rgba(255,255,255,.25) 0 1px 0 inset;
-    box-shadow:rgba(255,255,255,.25) 0 1px 0 inset;
+    -webkit-box-shadow:rgba(255,255,255,.25) 0 1px 0 inset, rgba(0,0,0,.8) 0 2px 3px;
+    -moz-box-shadow:rgba(255,255,255,.25) 0 1px 0 inset, rgba(0,0,0,.8) 0 2px 3px;
+    box-shadow:rgba(255,255,255,.25) 0 1px 0 inset, rgba(0,0,0,.8) 0 2px 3px;
+    span, time {
+      position:relative;
+      top:40px;
+    }
     li {
       .rounded-corners;
+      .linear-gradient(#1e1e1e,#2e2e2e);
       display:block;
       border:2px solid #0c0c0c;
-      background:#1e1e1e;
       padding:.5em;
       margin:0 0 .5em 0;
       overflow:hidden;
@@ -51,8 +102,8 @@ body {
       position:absolute;
       width:100%;
       height:0;
-      border-top:1px solid rgba(0,0,0,.5);
-      border-bottom:1px solid rgba(60,60,60,.5);
+      border-top:1px solid rgba(0,0,0,.3);
+      border-bottom:1px solid rgba(90,90,90,.3);
       top:50%;
       left:0;
     }
@@ -60,7 +111,7 @@ body {
       margin:0;
     }
     li:hover {
-      background:#000;
+      .linear-gradient(#0e0e0e,#1e1e1e);
     }
   }
   .dojo-date {
@@ -69,20 +120,39 @@ body {
     color:#BBB;
     font-weight:900;
     padding-right:1.5em;
+    font-size:1.25em;
   }
   .dojo-info {
     display:block;
     float:left;
-    font-size:1.75em;
+    font-size:1.5em;
+    font-weight:normal;
     color:#BBB;
+    text-shadow:rgba(0,0,0,.5) 0 0 2px;
   }
   .dojo-status {
     display:block;
     float:right;
     text-align:center;
-    width:140px;
-    text-shadow:rgba(255,255,255,.5) 0 0 10px;
+    width:200px;
+    font-size:1.5em;
+    font-family: 'Andale Mono', 'Lucida Console', monospace;
+    text-transform:uppercase;
     color:#BBB;
-    .rounded-corners(1.5em);
+    position:relative;
   }
+  .confirmed .dojo-status {
+    color:#2b2;
+    text-shadow:rgba(60,255,60,.6) 0 0 10px;
+  }
+  .waiting {
+    font-size:.75em;
+    .dojo-status {
+      text-shadow:rgba(255,255,255,.5) 0 0 10px;
+    }
+  }
+}
+span.amp {
+  font-family:Baskerville,GoudyBookletter1911,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style:italic;
 }

@@ -6,6 +6,7 @@ html
     = stylesheet_link_tag :all
     = javascript_include_tag 'jquery', :defaults
     = csrf_meta_tag
+    link[src='favicon.ico' rel='icon' type='image/vnd.microsoft.icon']
   body
     #root
       header#header
@@ -14,6 +15,7 @@ html
             h1
               img[src='/images/ruby.png']
               | GURU RS
-          h2 Próximos eventos
       section#main= yield
       footer#footer
+        #colophon
+          | Made by <a href='http://www.softa.com.br/'>Softa</a>. Design <span class='amp'>&amp;</span> CSS by <a href="http://www.twitter.com/leotartari" rel="nofollow">@leotartari</a>

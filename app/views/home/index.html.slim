@@ -1,9 +1,10 @@
-ul
+h2 Próximos eventos
+ul#dojos-list
   - for dojo in @dojos
-    li
+    li[class=class_for(dojo.status)]
       time.dojo-date
-        #{l dojo.date}
+        | #{l dojo.date}
       span.dojo-info
-        #{dojo.info}
-      span.dojo-status[class=class_for(dojo.status)]
-        #{dojo.status}
+        | #{dojo.info}
+      span.dojo-status
+        | #{dojo.status}

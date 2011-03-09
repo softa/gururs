@@ -7,3 +7,9 @@
   -o-border-radius: @radius;
   border-radius: @radius;
 }
+
+.linear-gradient (@top: #333, @bottom: #111) {
+  background:@top;
+  background:-moz-linear-gradient(top, @top 0%, @bottom 100%);
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, @top), color-stop(100%, @bottom));
+}
