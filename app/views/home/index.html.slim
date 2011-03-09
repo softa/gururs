@@ -1,5 +1,9 @@
-- for dojo in @dojos
-  = l dojo.date
-  = dojo.status
-  = dojo.info
-  br
+ul
+  - for dojo in @dojos
+    li
+      time.dojo-date
+        #{l dojo.date}
+      span.dojo-info
+        #{dojo.info}
+      span.dojo-status
+        #{dojo.status}

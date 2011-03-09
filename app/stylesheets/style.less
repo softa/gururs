@@ -1,0 +1,88 @@
+@import 'reset.less';
+@import 'variables-and-mixings.less';
+html { }
+body {
+  background:#CDCDCD url(/images/body-texture.png) repeat fixed left top;
+  max-width:960px;
+  margin:0 auto;
+}
+#root {
+  background:transparent url(/images/light.png) no-repeat scroll center top;
+  padding:1em;
+}
+#header {
+  #logo {
+    img {
+      vertical-align:middle;
+    }
+    h1 {
+      font-size:1.5em;
+      color:@guru-color;
+    }
+  }
+  h2 {
+    padding:1em 0;
+  }
+}
+#main {
+  ul {
+    .rounded-corners(10px);
+    background:#2e2e2e;
+    border:1px solid #2e2e2e;
+    list-style: none;
+    padding:1em;
+    margin:0;
+    -webkit-box-shadow:rgba(255,255,255,.25) 0 1px 0 inset;
+    -moz-box-shadow:rgba(255,255,255,.25) 0 1px 0 inset;
+    box-shadow:rgba(255,255,255,.25) 0 1px 0 inset;
+    li {
+      .rounded-corners;
+      display:block;
+      border:2px solid #0c0c0c;
+      background:#1e1e1e;
+      padding:.5em;
+      margin:0 0 .5em 0;
+      overflow:hidden;
+      line-height:2em;
+      position:relative;
+    }
+    li:after {
+      content:'';
+      position:absolute;
+      width:100%;
+      height:0;
+      border-top:1px solid rgba(0,0,0,.5);
+      border-bottom:1px solid rgba(60,60,60,.5);
+      top:50%;
+      left:0;
+    }
+    li.last {
+      margin:0;
+    }
+    li:hover {
+      background:#000;
+    }
+  }
+  .dojo-date {
+    display:block;
+    float:left;
+    color:#BBB;
+    font-weight:900;
+    padding-right:1.5em;
+  }
+  .dojo-info {
+    display:block;
+    float:left;
+    font-size:1.75em;
+    color:#BBB;
+  }
+  .dojo-status {
+    display:block;
+    float:right;
+    text-align:center;
+    width:140px;
+    text-shadow:rgba(255,255,255,.5) 0 0 10px;
+    color:#BBB;
+    .rounded-corners(1.5em);
+  }
+}

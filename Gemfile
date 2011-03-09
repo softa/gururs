@@ -7,6 +7,8 @@ gem 'rails', '3.0.3'
 
 gem 'pg'
 
+gem 'mongrel'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
