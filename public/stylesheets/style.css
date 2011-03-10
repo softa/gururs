@@ -305,6 +305,9 @@ a:link:active { color: #0066dd; }
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e1e1e), color-stop(100%, #2e2e2e));
   display: block;
   border: 2px solid #0c0c0c;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 0 6px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.7) 0 0 6px inset;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 6px inset;
   padding: 0.5em;
   margin: 0 0 0.5em 0;
   overflow: hidden;
