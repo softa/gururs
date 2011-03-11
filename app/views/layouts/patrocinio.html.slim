@@ -1,0 +1,17 @@
+!doctype html
+html
+  head
+    meta[charset='utf-8']
+    title Patrocínio RS on Rails '11
+    = stylesheet_link_tag 'sponsors'
+    = javascript_include_tag 'jquery', :defaults
+    = csrf_meta_tag
+    link[src='favicon.ico' rel='icon' type='image/vnd.microsoft.icon']
+  body
+    #root
+      header#header
+        hgroup
+          #logo
+            h1
+              img[src='/images/rsonrails.png']
+      section#main= yield

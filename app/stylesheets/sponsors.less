@@ -1,0 +1,92 @@
+@import 'reset.less';
+@import 'variables-and-mixings.less';
+html { }
+body {
+  background: #ccc;
+}
+a, a:visited, a:link {
+  color:#06D;
+  text-decoration:none;
+  -webkit-transition: all .2s ease-in;
+  :hover {
+    color:#28F;
+    text-decoration:underline;
+  }
+  :active {
+    color:#06D;
+  }
+}
+
+#header {
+  text-align: center;
+  #logo {
+    img {
+      vertical-align:middle;
+    }
+  }
+}
+
+#header, #main, #colophon {
+  max-width:760px;
+  margin:0 auto;
+  padding:1em;
+  background: white;
+}
+
+p{
+margin: 10px 0;
+}
+#main {
+  padding-bottom:5em;
+  
+  .section{
+    margin-bottom: 40px;
+    h2 {
+      font-family: Georgia;
+      width: 150px;
+      float: left;
+      color: #F95656;
+      text-align: right;
+      font-size:1.25em;
+      position:relative;
+      z-index:0;
+    }
+    h3 {
+      font-family: Georgia;
+      font-size:1.15em;
+    }
+    h3.ruby{
+      color: #900;
+    }
+    h3.gold{
+      color: #990;    
+    }
+    .info{
+      margin-left: 190px;
+      width: 500px;
+      color: #666;
+      ul{
+        margin: 10px;
+        list-style-type: circle;
+        
+        li{
+            margin: 5px;
+          .title{
+            font-weight: bold;
+
+          }
+          .author{
+            margin-left: 6px;
+            font-style: italic;
+            color: #888;
+          }
+        }
+      }
+    }
+
+  }
+}
+span.amp {
+  font-family:Baskerville,GoudyBookletter1911,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style:italic;
+}
