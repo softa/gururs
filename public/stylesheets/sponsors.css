@@ -64,7 +64,7 @@ hr {
 }
 input, select { vertical-align: middle; }
 body {
-  font: 13px/1.231 'Lucida Grande', 'Lucida Sans Serif', sans-serif;
+  font: 13px/1.231 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   *font-size: small;
 }
 select, input, textarea, button { font: 99% sans-serif; }
