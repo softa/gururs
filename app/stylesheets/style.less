@@ -21,13 +21,30 @@ a, a:visited, a:link {
 }
 
 #header {
+  overflow:hidden;
   #logo {
+    float:left;
     img {
       vertical-align:middle;
     }
     h1 {
       font-size:1.5em;
       color:@guru-color;
+    }
+  }
+  a#fisl {
+    display:block;
+    float:right;
+    padding:15px 0 0;
+    img {
+      border:0 none;
+    }
+    :hover {
+      opacity:.75;
+    }
+    :active {
+      padding:16px 0 0;
+      opacity:1;
     }
   }
 }

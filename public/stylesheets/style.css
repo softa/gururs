@@ -225,10 +225,23 @@ a:link:hover {
   text-decoration: underline;
 }
 a:link:active { color: #0066dd; }
+#header { overflow: hidden; }
+#header #logo { float: left; }
 #header #logo img { vertical-align: middle; }
 #header #logo h1 {
   font-size: 1.5em;
   color: #bc3838;
+}
+#header a#fisl {
+  display: block;
+  float: right;
+  padding: 15px 0 0;
+}
+#header a#fisl img { border: 0 none; }
+#header a#fisl:hover { opacity: 0.75; }
+#header a#fisl:active {
+  padding: 16px 0 0;
+  opacity: 1;
 }
 #footer {
   background: #ffffff;
